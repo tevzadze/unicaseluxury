@@ -119,37 +119,81 @@ button[type='submit']
 
 
 //start here!
-
-//delete this
-main
-    text-align: center
-    background: #101010
+header
+    background: url(../img/main_screen_bg.JPG)
     height: 100vh
-    position: relative
-    
-    h1
+    background-size: cover
+    width: 100%
+    .top_line
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        align-items: center
+        padding: gem(20) gem(50)
+        .menu-desc
+            display: flex
+            a
+                font-size: gem(20)
+                line-height: 1.1
+                color: #fff
+                margin: 0 gem(50)
+                &:hover
+                    text-decoration: underline
+        .get_contacts
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            a
+                font-size: gem(25)
+                line-height: 1.1
+                font-family: "PalatinoLinotype-Bold"
+                color: #f7c266
+                margin: gem(10) gem(10)
+            .message
+                display: flex
+    .top_line_gradient
+        .gradient_first
+            width: 100%
+            background-image: linear-gradient(to right,#141313,#eba34b 50%,#141313)
+            height: 2px
+        .gradient_two
+            background-image: linear-gradient(to right,#141313,#805c30 50%,#141313)
+            width: 100%
+            height: 2px
+            margin-top: gem(5)
+    .main_part
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        padding: 0 gem(50)
         margin-top: gem(100)
-        margin-bottom: gem(100)
-        span
-            color: #e42143  
-            font-weight: 900
-    ul
-        font-size: gem(18)
-        color: #fff
-        margin-top: gem(20)
-        li
-            margin-top: gem(8)
+        h1
+            font-size: gem(60)
+            color: #fff
+            line-height: 1.1
+            font-family: "lora_bold"
             span
-                color: #e42143
-            &:nth-child(2)
-                margin-bottom: gem(30)
-            &:nth-child(3)
-                opacity: 0.8
-    .template-plan
-        margin-top: gem(50)
-    .footer-desc
-        position: absolute
-        bottom: gem(10)
-        width: 100%
-        text-align: center
+                color: #edbc67
+        &-left
+            p
+                color: #fff
+                font-size: gem(24)
+                margin-top: gem(50)
+                line-height: 1.4
+            .button
+                font-size: gem(20)
+                width: gem(400)
+                color: #fff
+                height: gem(100)
+                background: url(../img/how_button_bg.PNG)
+                padding: gem(20) gem(50)
+                background-size: 100% 100%
+                &:hover
+                    background-image: linear-gradient(to right,#be965d,#916c3e 33%,#f7c480 66%,#9c7444)
+                    border-radius: 5px
+        &-right
+            img
+                width: gem(700)
+                    
         
