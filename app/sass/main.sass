@@ -119,9 +119,13 @@ button[type='submit']
 
 
 //start here!
+body
+    line-height: 1.65
+    font-size: gem(16)
+    position: relative
+    color: #333
 header
     background: url(../img/main_screen_bg.JPG)
-    height: 100vh
     background-size: cover
     width: 100%
     .top_line
@@ -166,7 +170,7 @@ header
         flex-direction: row
         justify-content: center
         align-items: center
-        padding: 0 gem(50)
+        padding: 0 gem(150)
         margin-top: gem(100)
         h1
             font-size: gem(60)
@@ -181,19 +185,422 @@ header
                 font-size: gem(24)
                 margin-top: gem(50)
                 line-height: 1.4
-            .button
-                font-size: gem(20)
-                width: gem(400)
-                color: #fff
-                height: gem(100)
-                background: url(../img/how_button_bg.PNG)
-                padding: gem(20) gem(50)
-                background-size: 100% 100%
-                &:hover
-                    background-image: linear-gradient(to right,#be965d,#916c3e 33%,#f7c480 66%,#9c7444)
-                    border-radius: 5px
         &-right
             img
                 width: gem(700)
-                    
+.button
+    font-size: gem(20)
+    width: gem(400)
+    color: #fff
+    background: url(../img/how_button_bg.PNG)
+    padding: gem(20) gem(50)
+    background-size: 100% 100%
+    text-align: center
+    font-family: SF-UI-Display-Light,sans-serif
+    &:hover
+        background-image: linear-gradient(to right,#be965d,#916c3e 33%,#f7c480 66%,#9c7444) !important
+        border-radius: 5px !important
+section
+    display: flex
+    padding: 0 gem(150)
+h3
+    display: flex
+    font-weight: bold
+.unique_accessories
+    flex-direction: column
+    .part_one
+        justify-content: center
+        flex-direction: column
+    &-header
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: gem(60)
+        h2
+            display: flex
+            font-size: gem(30)
+            font-family: "lora_bold"
+            text-transform: uppercase
+            background: -webkit-linear-gradient(top,#edaf5a 0,#cf701c 100%)
+            -webkit-background-clip: text
+            color: transparent
+        div
+            display: flex
+            background-image: linear-gradient(to right,#fff,#dc9a5b 50%,#fff)
+            height: gem(2)
+            width: gem(160)
+    &-main
+        display: flex
+        justify-content: space-between
+        &-pics
+            display: flex
+            width: gem(570)
+            height: gem(807)
+            img
+                display: flex
+                width: 100%
+        &-text
+            display: flex
+            flex-direction: column
+            width: 50%
+            h3
+                display: flex
+                font-family: "lora_regular"
+                font-size: gem(24)
+                text-align: center
+                margin-top: gem(150)
+                margin-bottom: gem(80)
+                align-self: center
+            &-animals
+                display: flex
+                justify-content: space-between
+                margin-bottom: gem(60)
+                &-all
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                &-img
+                    display: flex
+                    width: gem(113)
+                    height: gem(113)
+                    margin-bottom: gem(20)
+                    img
+                        display: flex
+                        width: 100%
+                span
+                    display: flex
+            p
+                text-align: center
+                display: flex
+            a
+                display: flex
+                align-self: center
+                margin-top: gem(60)
+    .button
+        color: #000
+        width: gem(480)
+        height: gem(70)
+        margin-top: gem(80)
+    .part_two
+        display: flex
+        h3
+            display: flex
+            font-family: "lora_regular"
+            font-size: gem(24)
+            text-align: center
+            margin-top: gem(150)
+            margin-bottom: gem(80)
+            align-self: center
+        .tabls
+            display: flex
+            justify-content: space-between
+            &-list
+                display: flex
+                flex-direction: column
+                margin-left: gem(100)
+                &-element
+                    display: flex
+                    margin-bottom: gem(16)
+                    span
+                        display: flex
+                        font-size: gem(16)
+            &-img
+                width: gem(570)
+                height: gem(371)
+                img
+                    width: 100%
+.our_work
+    flex-direction: column
+    align-items: center
+    h2
+        display: flex
+        font-size: gem(30)
+        font-family: "lora_bold"
+        text-transform: uppercase
+        background: -webkit-linear-gradient(top,#edaf5a 0,#cf701c 100%)
+        -webkit-background-clip: text
+        color: transparent
+    &-gradient
+        height: gem(2)
+        width: gem(160)
+        background-image: linear-gradient(to right,#fff,#dc9a5b 50%,#fff)
+    // div
+    //     display: flex
+    //     background-image: linear-gradient(to right,#fff,#dc9a5b 50%,#fff)
+    //     height: gem(2)
+    //     width: gem(160)
+    .slider
+        display: none
+        width: gem(370)
+        height: gem(370)
+.how
+    display: flex
+    justify-content: space-between
+    padding-bottom: gem(100)
+    &-left
+        display: flex
+        flex-direction: column
+        &-gradient
+            background-image: linear-gradient(to right,#ca9750,#fff)
+            width: 100%
+            height: gem(2)
+            margin-top: gem(100)
+            &-reverse
+                background-image: linear-gradient(to left,#ca9750,#fff)
+                width: 100%
+                height: gem(2)
+                margin-bottom: gem(40)
+        h2
+            line-height: 1.4
+            font-size: gem(42)
+            margin: gem(40) 0
+            color: #575755
+            font-family: lora_bold
+            text-transform: uppercase
+            span
+                line-height: 1.4
+                font-size: gem(42)
+                background: -webkit-linear-gradient(top,#edaf5a 0,#cf701c 100%)
+                -webkit-background-clip: text
+                color: transparent
+        p
+            line-height: 1.65
+            font-size: gem(16)
+    &-right
+        display: flex
+        flex-direction: column
+        margin-top: gem(100)
+        background-image: url(../img/form_how_bg.png)
+        background-size: 100% 100%
+        padding: 0 gem(60) gem(60) gem(60)
+        text-align: center
+        p
+            font-size: gem(22)
+            font-family: lora_regular
+            margin-top: gem(40)
+        form
+            label
+                width: 100%
+                border: none
+                margin-bottom: gem(50)
+                select
+                    margin-top: gem(50)
+                    width: 100%
+                    text-align: left
+                    outline: 0
+                    border: none
+                    text-transform: none
+                div
+                    width: 100%
+                    height: gem(2)
+                    background-image: -webkit-gradient(linear,left top,right top,from(#be965d),color-stop(33%,#916c3e),color-stop(66%,#f7c480),to(#9c7444))
+                input
+                    margin-top: gem(50)
+                    display: block
+                    width: 100%
+                    border: none
+                    outline: none
+        button
+            margin: auto
+            background: #fff
+            background-image: url(../img/how_button_bg.png)
+            height: gem(50)
+            background-size: 100% 100%
+            margin-top: gem(50)
+            cursor: pointer
+            width: 100%
+            border: none
+        button:hover
+            background-image: linear-gradient(to right,#be965d,#916c3e 33%,#f7c480 66%,#9c7444) !important
+            border-radius: 5px !important
+.our_clients
+    display: flex
+    background-image: url(../img/bloger_bg.jpg)
+    text-align: center
+    padding-bottom: gem(100)
+    align-items: center
+    flex-direction: column
+    padding: 0 gem(100)
+    h2
+        display: flex
+        font-size: gem(30)
+        font-family: "lora_bold"
+        text-transform: uppercase
+        background: -webkit-linear-gradient(top,#fdf7c6 0,#bf8a2b 100%)
+        -webkit-background-clip: text
+        color: transparent
+        margin-top: gem(60)
+        line-height: 1.65
+    &-gradient
+        display: flex
+        background-image: linear-gradient(to right,#141313,#dc9a5b 50%,#141313)
+        height: gem(2)
+        width: gem(160)
+        margin-bottom: gem(160)
+    &-top
+        display: flex
+        flex-wrap: wrap
+        &-element
+            display: flex
+            text-align: center
+            background-image: url(../img/bloger_image_bg.png)
+            background-size: 100% 100%
+            margin-top: gem(10)
+            flex-direction: column
+            margin: gem(10)
+            img
+                margin-top: gem(10)
+            span
+                color: #fff
+                padding-bottom: gem(20)
+    .button
+        background-image: url(../img/button_header.png)
+        background-size: 100% 100%
+        color: #fff
+        font-size: 16px
+        font-family: SF-UI-Display-Light,sans-serif;
+        padding: 15px 42px
+        text-decoration: none
+        margin-top: gem(100)
+        margin-bottom: gem(100)
+.work
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: gem(70)
+    h2
+        display: flex
+        font-size: gem(30)
+        font-family: "lora_bold"
+        text-transform: uppercase
+        background: -webkit-linear-gradient(top,#edaf5a 0,#cf701c 100%)
+        -webkit-background-clip: text
+        color: transparent
+        margin-top: gem(60)
+        line-height: 1.65
+    p
+        margin-top: gem(30)
+    &-gradient
+        height: gem(2)
+        width: gem(160)
+        background-image: linear-gradient(to right,#fff,#dc9a5b 50%,#fff)
+    &-all
+        display: flex
+        width: 100%
+        justify-content: space-between
+        margin-top: gem(70)
+        flex-wrap: wrap
+    &-element
+        display: flex
+        align-items: center
+        img
+            width: gem(70)
+            height: gem(70)
+        span
+            margin-left: gem(20)
+.why_we
+    display: flex
+    flex-direction: column
+    align-items: center
+    background: url(../img/advantages_jpg.jpg)
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    h2
+        display: flex
+        font-size: gem(30)
+        font-family: "lora_bold"
+        text-transform: uppercase
+        background: -webkit-linear-gradient(top,#fdf7c6 0,#bf8a2b 100%)
+        -webkit-background-clip: text
+        color: transparent
+        margin-top: gem(60)
+        line-height: 1.65
+    p
+        margin-top: gem(30)
+        color: #fff
+    &-gradient
+        height: gem(2)
+        width: gem(160)
+        background-image: linear-gradient(to right,#141313,#dc9a5b 50%,#141313)
+    &-all
+        display: flex
+        width: 100%
+        justify-content: space-between
+        margin-top: gem(70)
+    &-element
+        display: flex
+        align-items: center
+        img
+            width: gem(70)
+            height: gem(70)
+        span
+            margin-left: gem(20)
+            color: #fff
+    .button
+        background-image: url(../img/button_header.png)
+        background-size: 100% 100%
+        color: #fff
+        font-size: 16px
+        font-family: SF-UI-Display-Light,sans-serif;
+        padding: 15px 42px
+        text-decoration: none
+        margin-top: gem(100)
+        margin-bottom: gem(70)
+.end
+    display: flex
+    flex-direction: column
+    padding: 0 gem(150)
+    align-items: center
+    background: url(../img/advantages_jpg.jpg)
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    &-gradient
+        display: flex
+        flex-direction: column
+        margin-bottom: gem(25)
+        &-one
+            width: 100%
+            height: gem(2)
+            background-image: linear-gradient(to right,#141313,#eba34b 50%,#141313)
+        &-two
+            width: 100%
+            height: gem(1)
+            background-image: linear-gradient(to right,#141313,#805c30 50%,#141313)
+            margin-top: gem(5)
+    &-all
+        display: flex
+        justify-content: space-between
+        width: 100%
+        margin-bottom: gem(25)
+        &-left
+            width: gem(213)
+            height: gem(55)
+        &-middle
+            display: flex
+            span
+                font-family: SF-UI-Display-Light,sans-serif;
+                font-size: gem(14)
+                color: #7c7b7b
+        &-right
+            display: flex
+            p
+                font-family: SF-UI-Display-Light,sans-serif;
+                font-size: gem(14)
+                color: #fff
+                text-align: right
+                line-height: 1.1
+            span
+                font-family: PalatinoLinotype,sans-serif;
+                font-size: gem(20)
+                color: #f7c266
+
+
+
+
+
+
+
+
         
