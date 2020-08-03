@@ -31,4 +31,6 @@ $('.slider_main').owlCarousel({
 		mainClass: 'my-mfp-slide-bottom'
 	});
 
+	$('.menu-desc a').mPageScroll2id();
+
 });
